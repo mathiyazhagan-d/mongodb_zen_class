@@ -5,11 +5,12 @@
 
 
 ## create zen class database
+### use zen_class
 <img src="./image/img (1).png" alt="ans-1">
 
-### use zen_class
 
- insert the all collection i needed (users,codekata,attendance,topics,tasks,company_drives,mentors) 
+
+ ## insert the all collection i needed (users,codekata,attendance,topics,tasks,company_drives,mentors) 
 
 <img src="./image/img (2).png" alt="ans-1">
 
