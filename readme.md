@@ -5,7 +5,7 @@
 
 
 ## create zen class database
-### use zen_class
+``` use zen_class```
 <img src="./image/img (1).png" alt="ans-1">
 
 
