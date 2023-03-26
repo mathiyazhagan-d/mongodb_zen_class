@@ -15,7 +15,7 @@
 <img src="./image/img (2).png" alt="ans-1">
 
 ## 1). Find all the topics and tasks which are thought in the month of October
-
+```
 db.topics.aggregate([
     {
      $lookup:{
@@ -34,21 +34,22 @@ db.topics.aggregate([
                          ]} ]}
      }    
    ]);
-
+```
 <img src="./image/img (3).png" alt="ans-1">
 
 ## 2). Find all the company drives which appeared between 15 oct-2020 and 31-oct-2020
-
+```
 db.company_drives.find({
     $and: [
       { drive_date: { $lte: new Date("2020-10-31") } },
       { drive_date: { $gte: new Date("2020-10-15") } },
     ],
   }).toArray();
+  ```
 <img src="./image/img (4).png" alt="ans-1">
 
 ## 3). Find all the company drives and students who are appeared for the placement.
-
+```
   db.company_drives.aggregate([
     {
         $lookup: {
@@ -69,10 +70,11 @@ db.company_drives.find({
         }
     }
 ]).toArray();
+```
 <img src="./image/img (5).png" alt="ans-1">
 
 ## 4). Find the number of problems solved by the user in codekata
-
+```
 db.codekata.aggregate([
     {
       $lookup: {
@@ -92,11 +94,11 @@ db.codekata.aggregate([
       },
     },
   ]).toArray();
-  
+  ```
 <img src="./image/img (6).png" alt="ans-1">
 
 ## 5). Find all the mentors with who has the mentee's count more than 15
-
+```
 db.mentors.find({
     mentee_count:{ $gt:15 }
   }).toArray();
@@ -119,5 +121,5 @@ db.tasks.aggregate([
       },
     },
   ]).toArray();
-
+```
   <img src="./image/img (8).png" alt="ans-1">
