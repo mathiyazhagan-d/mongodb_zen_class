@@ -13,7 +13,217 @@ use zen_class
 
 
  ## insert the all collection i needed (users,codekata,attendance,topics,tasks,company_drives,mentors) 
+```
+// users
 
+ db.users.insertMany([
+    {
+      id: 1,
+      name: "Mathi",
+      email: "Mathisa@gmail.com",
+    },  
+    {
+      id: 2,
+      name: "sam",
+      email: "sam1234335r@gmail.com",
+    },
+    {
+      id: 3,
+      name: "Pavan",
+      email: "Pavankumar@gmail.com",
+    },
+    {
+      id: 4,
+      name: "Shiek",
+      email: "Shiek23452hj@gmail.com",
+    },
+    {
+      id: 5,
+      name: "Ajith",
+      email: "Ajithw4gh537a@gmail.com",
+    },
+  ]);
+
+// codekata
+
+  db.codekata.insertMany([
+  {
+    id: 1,
+    no_of_problems_solved: 105,
+  },
+  {
+    id: 2,
+    no_of_problems_solved: 120,
+  },
+  {
+    id: 3,
+    no_of_problems_solved: 95,
+  },
+  {
+    id: 4,
+    no_of_problems_solved: 70,
+  },
+  {
+    id: 5,
+    no_of_problems_solved: 90,
+  },
+]);
+
+// attendance
+
+db.attendance.insertMany([
+    {
+      id: 1,
+      present: true,
+    },
+    {
+      id: 2,
+      present: true,
+    },
+    {
+      id: 3,
+      present: false,
+    },
+    {
+      id: 4,
+      present: false,
+    },
+    {
+      id: 5,
+      present: true,
+    },
+  ]);
+
+// topics
+
+db.topics.insertMany([
+    {
+      id: 1,
+      topic: "HTML",
+      topic_date: new Date("2020-9-01"),
+    },
+    {
+      id: 2,
+      topic: "CSS",
+      topic_date: new Date("2020-9-10"),
+    },
+    {
+      id: 3,
+      topic: "Javascript",
+      topic_date: new Date("2020-9-15"),
+    },
+    {
+      id: 4,
+      topic: "ReactJS",
+      topic_date: new Date("2020-10-20"),
+    },
+    {
+      id: 5,
+      topic: "NodeJS",
+      topic_date: new Date("2020-10-25"),
+    },
+  ]);
+
+// tasks
+
+db.tasks.insertMany([
+    {
+      id: 1,
+      task: "HTML task",
+      due_date: new Date("2020-9-05"),
+      submitted: true,
+    },
+    {
+      id: 2,
+      task: "CSS task",
+      due_date: new Date("2020-9-15"),
+      submitted: true,
+    },
+    {
+      id: 3,
+      task: "Javascript task",
+      due_date: new Date("2020-9-20"),
+      submitted: true,
+    },
+    {
+      id: 4,
+      task: "ReactJS task",
+      due_date: new Date("2020-10-25"),
+      submitted: false,
+    },
+    {
+      id: 5,
+      task: "NodeJS task",
+      due_date: new Date("2020-10-29"),
+      submitted: false,
+    },
+  ]);
+
+// company_drives
+
+db.company_drives.insertMany([
+    {
+      id: 1,
+      drive_date: new Date("2020-9-05"),
+      company_name: "realme",
+    },
+    {
+      id: 1,
+      drive_date: new Date("2020-10-10"),
+      company_name: "Amazon",
+    },
+    {
+      id: 2,
+      drive_date: new Date("2020-10-20"),
+      company_name: "infotech",
+    },
+    {
+      id: 3,
+      drive_date: new Date("2020-10-15"),
+      company_name: "Zoho",
+    },
+    {
+      id: 5,
+      drive_date: new Date("2020-9-30"),
+      company_name: "dell",
+    },
+  ]);
+
+// mentors
+
+db.mentors.insertMany([
+    {
+      id: 1,
+      mentor_name: "Sanjai",
+      mentor_email: "Sanjai3456yw@gmail.com",
+      mentee_count: 40,
+    },
+    {
+      id: 2,
+      mentor_name: "Ruban",
+      mentor_email: "Rubanka84n@gmail.com",
+      mentee_count: 35,
+    },
+    {
+      id: 3,
+      mentor_name: "Arun kumar",
+      mentor_email: "Arunkumare352@gmail.com",
+      mentee_count: 20,
+    },
+    {
+      id: 4,
+      mentor_name: "krishna",
+      mentor_email: "krishnagsdr4432@gmail.com",
+      mentee_count: 32,
+    },
+    {
+      id: 5,
+      mentor_name: "Saran",
+      mentor_email: "Saran4t23knj@gmail.com",
+      mentee_count: 6,
+    },
+  ]);
+```
 <img src="./image/img (2).png" alt="ans-1">
 
 ## 1). Find all the topics and tasks which are thought in the month of October
