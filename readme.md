@@ -12,7 +12,7 @@ use zen_class
 
 
 
- ## insert the all collection i needed (users,codekata,attendance,topics,tasks,company_drives,mentors) 
+ ## insert the all collection needed (users,codekata,attendance,topics,tasks,company_drives,mentors) 
 ```
 // users
 
